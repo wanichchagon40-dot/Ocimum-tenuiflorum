@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard คู่มือการขยายพันธุ์กะเพรา 3 วิธี</title>
+    <!-- Google Fonts: Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #66bb6a;
+            --accent-color: #81c784;
+            --bg-color: #f4f9f4;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #7f8c8d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image-container {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image-container img {
+            transform: scale(1.05);
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(46, 125, 50, 0.9);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .card-content {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 15px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            font-size: 0.95rem;
+            color: #455a64;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .pros-cons {
+            margin-top: auto;
+            background-color: #f1f8f1;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .pros {
+            color: #2e7d32;
+            margin-bottom: 4px;
+        }
+
+        .cons {
+            color: #c62828;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Dashboard Header -->
+        <header>
+            <h1>🌿 Dashboard คู่มือการขยายพันธุ์กะเพรา</h1>
+            <p>สรุป 3 วิธีขยายพันธุ์กะเพราแบบละเอียด ปลูกง่าย โตไว ได้ผลผลิตดี</p>
+        </header>
+
+        <!-- Dashboard Grid Cards -->
+        <div class="grid-container">
+            
+            <!-- วิธีที่ 1: เพาะเมล็ด -->
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="การเพาะเมล็ดกะเพรา">
+                    <div class="badge">วิธีที่ 1</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">การเพาะเมล็ด (Seed)</h2>
+                    
+                    <div class="section-title">อุปกรณ์หลัก</div>
+                    <ul>
+                        <li>เมล็ดพันธุ์ดี, ถาด/กระถางเพาะ</li>
+                        <li>ดินร่วนปนทราย / พีทมอส</li>
+                        <li>ฟ็อกกี้ (กระบอกฉีดน้ำ)</li>
+                    </ul>
+
+                    <div class="section-title">ขั้นตอนสำคัญ</div>
+                    <ol>
+                        <li>เตรียมดินเพาะ รดน้ำให้ชุ่ม</li>
+                        <li>หว่านเมล็ดกระจายทั่ว อย่าให้แน่นเกินไป</li>
+                        <li>กลบดินบางๆ 0.5 ซม. ตั้งในที่ร่มรำไร</li>
+                        <li>ย้ายกล้าเมื่อมีใบจริง 4-6 ใบ (20-25 วัน)</li>
+                    </ol>
+
+                    <div class="pros-cons">
+                        <div class="pros"><strong>✅ ข้อดี:</strong> รากแก้วแข็งแรง ทนแล้ง อายุยืน</div>
+                        <div class="cons"><strong>❌ ข้อเสีย:</strong> ใช้เวลานานกว่าจะเก็บเกี่ยวได้</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- วิธีที่ 2: ปักชำกิ่ง -->
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="การปักชำกิ่งกะเพรา">
+                    <div class="badge">วิธีที่ 2</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">การปักชำกิ่ง (Cuttings)</h2>
+                    
+                    <div class="section-title">อุปกรณ์หลัก</div>
+                    <ul>
+                        <li>กรรไกรตัดแต่งกิ่งที่สะอาด</li>
+                        <li>กระถางและดินปลูก (ดินร่วนผสมปุ๋ยคอก)</li>
+                    </ul>
+
+                    <div class="section-title">ขั้นตอนสำคัญ</div>
+                    <ol>
+                        <li>เลือกกิ่งกึ่งแก่กึ่งอ่อน ยาว 10-15 ซม.</li>
+                        <li>ตัดเฉียง 45 องศา และเด็ดใบล่างออก</li>
+                        <li>ปักลงดินลึก 3-5 ซม. กดโคนให้แน่น</li>
+                        <li>รดน้ำสม่ำเสมอ ตั้งในร่มจนกว่าจะแตกยอด</li>
+                    </ol>
+
+                    <div class="pros-cons">
+                        <div class="pros"><strong>✅ ข้อดี:</strong> โตเร็วมาก เก็บเกี่ยวได้ไว ไม่กลายพันธุ์</div>
+                        <div class="cons"><strong>❌ ข้อเสีย:</strong> เป็นรากฝอย อายุสั้นกว่าเพาะเมล็ด</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- วิธีที่ 3: แช่น้ำออกราก -->
+            <div class="card">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80" alt="การแช่น้ำออกราก">
+                    <div class="badge">วิธีที่ 3</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">การแช่น้ำ (Water Prop)</h2>
+                    
+                    <div class="section-title">อุปกรณ์หลัก</div>
+                    <ul>
+                        <li>ขวดแก้ว หรือขวดพลาสติก</li>
+                        <li>น้ำสะอาด (พักคลอรีนแล้ว)</li>
+                        <li>กรรไกรสะอาด</li>
+                    </ul>
+
+                    <div class="section-title">ขั้นตอนสำคัญ</div>
+                    <ol>
+                        <li>ตัดกิ่งกะเพรา 10-15 ซม. เด็ดใบล่างออกให้หมด</li>
+                        <li>แช่น้ำเฉพาะโคน (ระวังใบโดนน้ำเพื่อไม่ให้เน่า)</li>
+                        <li>เปลี่ยนน้ำทุก 2-3 วัน วางริมหน้าต่าง</li>
+                        <li>รอรากงอกยาว 3-5 ซม. แล้วย้ายลงดิน</li>
+                    </ol>
+
+                    <div class="pros-cons">
+                        <div class="pros"><strong>✅ ข้อดี:</strong> ใช้อุปกรณ์น้อย เห็นรากชัดเจน รอดสูง</div>
+                        <div class="cons"><strong>❌ ข้อเสีย:</strong> ต้องเปลี่ยนน้ำบ่อย รากเปราะบาง</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Dashboard แนะนำวิธีเกษตรกรยุคใหม่ • จัดทำขึ้นเพื่อการเรียนรู้และปลูกผักสวนครัว</p>
+        </footer>
+    </div>
+
+</body>
+</html>
